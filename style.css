@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
     padding: 0px;
     margin: 0px;
 }
@@ -85,17 +87,135 @@ a {
 
 .container-two {
     background-color: white;
+    color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.container-two .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-two .img-one,
+.container-two .img-two,
+.container-two .img-three, 
+.container-two .img-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 190px;
+    height: fit-content;
+    padding: 16px;
+    font-size: 18px;
+    color: #2d3b50d2;
+}
+
+.container-two img {
+    border: 5px solid #3882F6;
+    border-radius: 15px;
 }
 
 .container-three {
     background-color: #E5E7EB;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+}
+
+.container-three .info {
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    height: fit-content;
+}
+
+.container-three .quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.container-three .author {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+    padding-right: 24px;
+
 }
 
 .container-four {
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    padding: 96px;
+}
+
+.container-four .inner-block {
     background-color: #3882F6;
+    display: flex;
+    border-radius: 10px;
+    width: 900px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 128px;
+    padding: 16px;
+}
+
+.container-four .left-side {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-four p,
+.container-four h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-four button {
+    transition-duration: 1000ms;
+    background-color: #3882F6;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 3px solid white;
+    width: 124px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.container-four button:hover {
+    transition-duration: 1000ms;
+    background-color: white;
+    color: #3882F6;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 3px solid white;
+    width: 124px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 }
 
 .footer {
     color: white;
     background-color: #1f2937;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 }
